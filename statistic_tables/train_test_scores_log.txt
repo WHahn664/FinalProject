@@ -1,0 +1,16 @@
+--- Training vs Testing Scores (LOG) ---
+--- Linear Regression ---
+Train RMSE: 46.484, Test RMSE: 109.969
+Train R²: -0.039, Test R²: -0.026
+
+--- Tuned Decision Tree ---
+Train RMSE: 40.205, Test RMSE: 110.024
+Train R²: 0.223, Test R²: -0.027
+
+--- Tuned Random Forest ---
+Train RMSE: 45.472, Test RMSE: 109.966
+Train R²: 0.006, Test R²: -0.026
+
+--- Tuned SVR ---
+Train RMSE: 46.741, Test RMSE: 110.218
+Train R²: -0.051, Test R²: -0.031
