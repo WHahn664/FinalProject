@@ -1,7 +1,6 @@
 from src.data_loader import load_data, split_data
 from src.model_evaluation import evaluate_untuned, evaluate_tuned, evaluate_train_test
 from src.plotting import plot_rmse_bars
-from src.utils import save_table
 
 # Load and prepare data
 X, y_raw, y_log = load_data('forestfires.csv')
