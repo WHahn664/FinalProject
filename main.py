@@ -19,7 +19,7 @@ save_table(results_untuned_log, 'untuned_log.csv')
 save_table(results_tuned_raw, 'tuned_raw.csv')
 save_table(results_tuned_log, 'tuned_log.csv')
 
-# Save RMSE bar plots in a new folder called "results".
+# Save RMSE bar plots as a single .svg file in a new folder called "results".
 plot_rmse_bars(results_untuned_raw, results_tuned_raw, results_untuned_log, results_tuned_log)
 
 # Save train/test scores as a .txt file in a new folder called "results".
