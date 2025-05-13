@@ -1,0 +1,5 @@
+                     Mean RMSE   Std RMSE   Mean R2
+Linear Regression    40.884577  21.787281 -0.183589
+Tuned Decision Tree  50.167779  17.912611 -1.665380
+Tuned Random Forest  45.459857  20.422464 -0.692533
+Tuned SVR            40.787544  23.082189 -0.095680
