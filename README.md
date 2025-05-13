@@ -29,6 +29,7 @@ This final project focuses on creating 4 different types of regression models ba
 
 
 forestfires.csv
+
 Predicting Forest Fires.ipynb
 
 # Steps to evaluate the models:
