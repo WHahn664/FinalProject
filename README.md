@@ -10,8 +10,9 @@ This final project focuses on creating 4 different types of regression models ba
 
 1. Clone github repository in the terminal on jupyterhub (or any other editor) like this:
 git clone https://github.com/WHahn664/FinalProject.git
-2. Run the main.py in the terminal:
+2. Run the main.py in the terminal (this might take a few minutes to run completely):
 python main.py
+
 3 (Side note to what I did in jupyterhub). Or you can do what I did and run something like this in the terminal):
 python /home/jovyan/great/FinalProject/main.py
 
