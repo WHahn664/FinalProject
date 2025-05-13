@@ -4,7 +4,32 @@ This final project focuses on creating 4 different types of regression models ba
 # Files Included
 'src/' (Source Code)
 
-- data_loader.py: This file contains 
+- config.py
+- data_loader.py
+- model_evaluation.py
+- plotting.py
+- utils.py
+
+'statistic_tables/' (Contains .txt files containg the mean RMSE, std RMSE, and mean R2 for each of the 4 models)
+
+- train_test_scores_log.txt
+- train_test_scores_raw.txt
+- tuned_log.txt
+- tuned_raw.txt
+- untuned_log.txt
+- untune_raw.txt
+
+'visualizations/'
+
+- rmse_comparison.svg
+
+'writeup/'
+
+- Final Project Draft by William Hahn.pdf
+
+
+forestfires.csv
+Predicting Forest Fires.ipynb
 
 # Steps to evaluate the models:
 
