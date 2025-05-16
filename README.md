@@ -1,5 +1,5 @@
 # FinalProject
-This final project focuses on creating 4 different types of regression models based on meteorlogical data in the forestfires.csv data set. We will then be comparing those models based on three metrics mean RMSE (log), std RMSE (log), mean R2 (log). We will be using temp (Celsius), RH (percentage), wind (km/hr) speed, and rain (mm/m2) as the independent variables. We will also be using the dependent variable area (hectares). We will also be applying a logarithmic transformation on the area variable to stabilize the variance within the area variable. We will also be comparing the three metrics of each model before and after applying logartihimc transformation on the area variable. The 4 types of models that will be compared are: linear regression model, decision tree model, random forest model, and support vector machine model. 
+This final project focuses on creating 4 different types of regression models based on meteorlogical data in the forestfires.csv data set. We will then be comparing those models based on three metrics mean RMSE (log), std RMSE (log), mean R2 (log), and std R2 (log). We will be using temp (Celsius), RH (percentage), wind (km/hr) speed, and rain (mm/m2) as the independent variables. We will also be using the dependent variable area (hectares). We will also be applying a logarithmic transformation on the area variable to stabilize the variance within the area variable. We will also be comparing the three metrics of each model before and after applying logartihimc transformation on the area variable. The 4 types of models that will be compared are: linear regression model, decision tree model, random forest model, and support vector machine model. 
 
 # Files Included
 'src/' (Source Code)
@@ -12,8 +12,7 @@ This final project focuses on creating 4 different types of regression models ba
 
 'statistic_tables/' (Contains .txt files containg the mean RMSE, std RMSE, and mean R2 for each of the 4 models)
 
-- train_test_scores_log.txt
-- train_test_scores_raw.txt
+- train_test_scores.txt
 - tuned_log.txt
 - tuned_raw.txt
 - untuned_log.txt
@@ -21,7 +20,11 @@ This final project focuses on creating 4 different types of regression models ba
 
 'visualizations/'
 
+- r2_mean_comparison.svg
+- r2_std_comparison.svg
 - rmse_comparison.svg
+- rmse_std_comparison.svg
+- target_distributions.svg
 
 'writeup/'
 
@@ -42,4 +45,4 @@ python main.py
 3 (Side note to what I did in jupyterhub). Or you can do what I did and run something like this in the terminal):
 python /home/jovyan/great/FinalProject/main.py
 
-4. A new folder should pop up contaiing the 4 csv containg the three metrics (mean RMSE, std RMSE, mean R2) for the 4 models for both the raw data (untransformed area column) and the logarthimic transformed data (log transformed area column). This folder also contains a single .svg file containing 4 bar blots showing the mean RMSE for the 4 models per bar plot. Two of the bar plots contain the mean RMSE for untuned models for the raw data. The other two bar plots contain the mean RMSE for tuned models for the logarthimic transformed data.
+4. A new folder should pop up called 'results' containing 5 .txt files containing the 4 metrics (mean RMSE, std RMSE, mean R2, std R2) for the 4 models for both the raw data (untransformed area column) and the logarthimic transformed data (log transformed area column). This folder also contains 5 .svg files containing 4 bar blots showing the mean RMSE for the 4 models per bar plot. Two of the bar plots contain the mean RMSE for untuned models for the raw data. The other two bar plots contain the mean RMSE for tuned models for the logarthimic transformed data.
