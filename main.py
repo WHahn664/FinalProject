@@ -45,9 +45,11 @@ plot_rmse_std_bars(results_untuned_raw, results_tuned_raw, results_untuned_log, 
 # Merge Linear Regression into tuned_raw models
 models_raw_combined = models_tuned_raw.copy()
 models_raw_combined["Linear Regression"] = models_untuned_raw["Linear Regression"]
+models_log_combined = models_tuned_log.copy()
+models_log_combined["Linear Regression"] = models_untuned_log["Linear Regression"]
 
 # Save train/test scores to TXT
-save_train_test_scores(models_raw_combined, models_tuned_log, X_train, y_raw_train, X_test, y_raw_test,
+save_train_test_scores(models_raw_combined, models_log_combined, X_train, y_raw_train, X_test, y_raw_test,
                        "results/train_test_scores.txt")
 
 
