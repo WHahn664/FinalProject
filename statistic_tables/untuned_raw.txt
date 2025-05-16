@@ -1,5 +1,0 @@
-                   Mean RMSE   Std RMSE   Mean R2
-Linear Regression  40.884577  21.787281 -0.183589
-Decision Tree      63.200770  20.426981 -4.752024
-Random Forest      47.055108  19.954895 -0.899120
-SVR                40.846172  23.080156 -0.100132
