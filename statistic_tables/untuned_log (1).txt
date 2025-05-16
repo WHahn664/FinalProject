@@ -1,0 +1,7 @@
+--- Untuned models on LOG target ---
+                   Mean RMSE  Std RMSE   Mean R2    Std R2
+Model                                                     
+Linear Regression   1.548826  0.241614 -0.438975  0.853782
+Decision Tree       1.901854  0.113323 -0.966131  0.254800
+Random Forest       1.510884  0.103124 -0.230445  0.071622
+SVR                 1.523915  0.156390 -0.244750  0.094948

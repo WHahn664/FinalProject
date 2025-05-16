@@ -1,0 +1,34 @@
+--- Training vs Testing Scores (RAW) ---
+--- Decision Tree ---
+Train RMSE: 42.398, Test RMSE: 111.757
+Train R²: 0.136, Test R²: -0.060
+
+--- Random Forest ---
+Train RMSE: 32.914, Test RMSE: 109.304
+Train R²: 0.479, Test R²: -0.014
+
+--- SVR ---
+Train RMSE: 46.670, Test RMSE: 110.167
+Train R²: -0.047, Test R²: -0.030
+
+--- Linear Regression ---
+Train RMSE: 45.337, Test RMSE: 108.391
+Train R²: 0.012, Test R²: 0.003
+
+--- Training vs Testing Scores (LOG-TRANSFORMED) ---
+--- Decision Tree ---
+Train RMSE: 46.135, Test RMSE: 109.998
+Train R²: -0.023, Test R²: -0.026
+
+--- Random Forest ---
+Train RMSE: 46.282, Test RMSE: 109.938
+Train R²: -0.030, Test R²: -0.025
+
+--- SVR ---
+Train RMSE: 46.692, Test RMSE: 110.174
+Train R²: -0.048, Test R²: -0.030
+
+--- Linear Regression ---
+Train RMSE: 46.484, Test RMSE: 109.969
+Train R²: -0.039, Test R²: -0.026
+

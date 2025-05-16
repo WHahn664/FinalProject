@@ -1,0 +1,9 @@
+--- Tuned models on RAW target ---
+Best params for Decision Tree: {'max_depth': 3, 'min_samples_split': 10}
+Best params for Random Forest: {'max_depth': 3, 'n_estimators': 200}
+Best params for SVR: {'C': 100, 'epsilon': 0.5, 'kernel': 'rbf'}
+               Mean RMSE   Std RMSE   Mean R2    Std R2
+Model                                                  
+Decision Tree  45.462807  20.022810 -0.848815  1.383083
+Random Forest  43.753043  20.907845 -0.445812  0.552955
+SVR            40.699967  23.117058 -0.088286  0.054258

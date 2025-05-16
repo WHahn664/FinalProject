@@ -1,0 +1,9 @@
+--- Tuned models on LOG target ---
+Best params for Decision Tree: {'max_depth': 3, 'min_samples_split': 5}
+Best params for Random Forest: {'max_depth': 3, 'n_estimators': 50}
+Best params for SVR: {'C': 100, 'epsilon': 0.5, 'kernel': 'rbf'}
+               Mean RMSE  Std RMSE   Mean R2    Std R2
+Model                                                 
+Decision Tree   1.475714  0.041947 -0.189496  0.185833
+Random Forest   1.382318  0.126554 -0.024608  0.031966
+SVR             1.431867  0.169200 -0.095107  0.087173
