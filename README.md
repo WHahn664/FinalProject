@@ -42,7 +42,6 @@ main.py: Contains the starting code that initiates the analysis. Also puts your 
 1. Clone github repository in the terminal on jupyterhub (or any other editor) like this:
 git clone https://github.com/WHahn664/FinalProject.git
 2. Then run this in the terminal:
-
 cd FinalProject
 3. Run the main.py in the terminal (this might take a few minutes to run completely):
 python main.py
