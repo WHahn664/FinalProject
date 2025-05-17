@@ -16,7 +16,7 @@ random.seed(42)
 np.random.seed(42)
 
 # Load and prepare data
-X, y_raw, y_log = load_data('FinalProject/dataset/forestfires.csv')
+X, y_raw, y_log = load_data('dataset/forestfires.csv')
 X_train, X_test, y_raw_train, y_raw_test, y_log_train, y_log_test = split_data(X, y_raw, y_log)
 
 
