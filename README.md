@@ -44,7 +44,7 @@ git clone https://github.com/WHahn664/FinalProject.git
 2. Run the main.py in the terminal (this might take a few minutes to run completely):
 python main.py
 
-3 (Side note to what I did in jupyterhub). Or you can do what I did and run something like this in the terminal):
+3 (Side note to what I did in jupyterhub). Or you can do what I did and run something like this in the terminal:
 python /home/jovyan/FinalProject/main.py
 
 4. A new folder should pop up called 'results' containing all of the visualizations (.svg files) and the statistic tables (.txt files). 
