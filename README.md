@@ -43,7 +43,7 @@ main.py: Contains the starting code that initiates the analysis. Also puts your 
 git clone https://github.com/WHahn664/FinalProject.git
 2. Then run this in the terminal:
 cd FinalProject
-3. Run the main.py in the terminal (this might take a 10-15 mins or so to run completely):
+3. Run the main.py in the terminal (this might take 10-15 mins or so to run completely):
 python main.py
 
 4. (Side note to what I did in jupyterhub). Or you can do what I did and run something like this in the terminal:
