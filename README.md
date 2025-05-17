@@ -2,6 +2,11 @@
 This final project focuses on creating 4 different types of regression models based on meteorlogical data in the forestfires.csv data set. We will then be comparing those models based on four metrics mean RMSE (log), std RMSE (log), mean R2 (log), and std R2 (log). We will be using temp (Celsius), RH (percentage), wind (km/hr) speed, and rain (mm/m2) as the independent variables. We will also be using the dependent variable area (hectares). We will also be applying a logarithmic transformation on the area variable to stabilize the variance within the area variable. We will also be comparing the four metrics of each model before and after applying logartihimc transformation on the area variable. We will also be hypetuning our models (exclusing linear regression) by performing a GridSearchCV to find the most optimal hyperparameters to use for our models. The 4 types of models that will be compared are: linear regression model, decision tree model, random forest model, and support vector machine model. Check the pdf file in the writeup file for more details about the project and conclusions. 
 
 # Files Included
+
+'writeup/'
+
+- forestfires.csv: Contains the data set used for this project.
+
 'src/' (Source Code)
 
 - config.py: This contains the range of hyperparameters that we will be using for our models. We will then use GridSearchCV in the model_evaluation.py file to help us choose the most optimal hyperparameters for our models (excluding linear regression).
@@ -29,9 +34,6 @@ This final project focuses on creating 4 different types of regression models ba
 'writeup/'
 
 - Predicting Wildfires.pdf: Contains a detailed writeup about the project and results.
-
-
-forestfires.csv: Contains the data set used for this project.
 
 main.py: Contains the starting code that initiates the analysis. Also puts your .txt tables and .svg files in a separate folder called "results."
 
