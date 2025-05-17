@@ -3,7 +3,7 @@ This final project focuses on creating 4 different types of regression models ba
 
 # Files Included
 
-'writeup/'
+'dataset/'
 
 - forestfires.csv: Contains the data set used for this project.
 
