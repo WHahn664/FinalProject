@@ -25,17 +25,17 @@ def split_data(X, y_raw, y_log):
     into training and testing sets.
 
     Describing the parameters:
-        X (DataFrame): Feature matrix.
-        y_raw (Series): Raw target values.
-        y_log (Series): Log-transformed target values.
+        X (pd.DataFrame): Feature matrix.
+        y_raw (pd.Series): Raw target values.
+        y_log (pd.Series): Log-transformed target values.
 
     This is what the function returns:
-        X_train (DataFrame): Training feature matrix.
-        X_test (DataFrame): Testing feature matrix.
-        y_raw_train (Series): Training raw target values.
-        y_raw_test (Series): Testing raw target values.
-        y_log_train (Series): Training log-transformed target values.
-        y_log_test (Series): Testing log-transformed target values.
+        X_train (pd.DataFrame): Training feature matrix.
+        X_test (pd.DataFrame): Testing feature matrix.
+        y_raw_train (pd.Series): Training raw target values.
+        y_raw_test (pd.Series): Testing raw target values.
+        y_log_train (pd.Series): Training log-transformed target values.
+        y_log_test (pd.Series): Testing log-transformed target values.
     """
     X_train, X_test, y_raw_train, y_raw_test = train_test_split(X, y_raw, test_size=0.2, random_state=42)
     _, _, y_log_train, y_log_test = train_test_split(X, y_log, test_size=0.2, random_state=42)
