@@ -68,7 +68,7 @@ def evaluate_untuned(X_train, y_train, random_state=42):
     return results_df, fitted_models
 
 
-def evaluate_tuned(X_train, y_train, random_state=42):
+def evaluate_tuned(X_train, y_train, is_log_target=False, random_state=42, return_params=False):
     """
     This function will hypertune our models using the best hyperparameters found 
     using GridSearchCV. This function will also evaluate each model with a 5-fold cross-validation.
@@ -76,11 +76,14 @@ def evaluate_tuned(X_train, y_train, random_state=42):
     Parameters used:
         X_train (DataFrame): Training feature matrix.
         y_train (Series): Training target values (raw or log-transformed).
+        is_log_target (bool): Whether the target is log-transformed.
         random_state (int): Seed for reproducibility.
+        return_params (bool): If True, also return best hyperparameters for each model.
+
     Returns:
         results_df (DataFrame): Cross-validation metrics (mean and std of RMSE and R2) for each tuned model.
         fitted_models (dict): Dictionary of tuned models trained on the full training set.
-        tuned_params (dict, optional): Dictionary of best hyperparameters per model (only if return_params=True).
+        tuned_params (dict): Dictionary of best hyperparameters per model (only if return_params=True).
     """
     param_grids = {
         "Decision Tree": {
