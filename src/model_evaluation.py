@@ -13,8 +13,8 @@ def evaluate_untuned(X_train, y_train, random_state=42):
     This function will evaluate the untuned regression models using a 5-fold cross-validation.
 
     Parameters used:
-        X_train (DataFrame): Training feature matrix.
-        y_train (Series): Training target values (raw or log-transformed).
+        X_train (pd.DataFrame): Training feature matrix.
+        y_train (pd.Series): Training target values (raw or log-transformed).
         random_state (int): Seed for reproducibility (default is 42).
 
     Returns:
@@ -74,14 +74,14 @@ def evaluate_tuned(X_train, y_train, is_log_target=False, random_state=42, retur
     using GridSearchCV. This function will also evaluate each model with a 5-fold cross-validation.
 
     Parameters used:
-        X_train (DataFrame): Training feature matrix.
-        y_train (Series): Training target values (raw or log-transformed).
+        X_train (pd.DataFrame): Training feature matrix.
+        y_train (pd.Series): Training target values (raw or log-transformed).
         is_log_target (bool): Whether the target is log-transformed.
         random_state (int): Seed for reproducibility.
         return_params (bool): If True, also return best hyperparameters for each model.
 
     Returns:
-        results_df (DataFrame): Cross-validation metrics (mean and std of RMSE and R2) for each tuned model.
+        results_df (pd.DataFrame): Cross-validation metrics (mean and std of RMSE and R2) for each tuned model.
         fitted_models (dict): Dictionary of tuned models trained on the full training set.
         tuned_params (dict): Dictionary of best hyperparameters per model (only if return_params=True).
     """
@@ -169,10 +169,10 @@ def save_train_test_scores(models_raw, models_log, X_train, y_raw_train, X_test,
     Parameters used:
         models_raw (dict): Trained models using the raw target values.
         models_log (dict): Trained models using log-transformed targets (predictions are back-transformed).
-        X_train (DataFrame): Training feature matrix.
-        y_raw_train (Series): Raw training target values.
-        X_test (DataFrame): Testing feature matrix.
-        y_raw_test (Series): Raw testing target values.
+        X_train (pd.DataFrame): Training feature matrix.
+        y_raw_train (pd.Series): Raw training target values.
+        X_test (pd.DataFrame): Testing feature matrix.
+        y_raw_test (pd.Series): Raw testing target values.
         output_path (str): Path to save the evaluation results as a text file.
 
     Returns:
