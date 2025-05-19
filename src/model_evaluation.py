@@ -9,7 +9,18 @@ from sklearn.metrics import mean_squared_error, r2_score
 import os
 
 def evaluate_untuned(X_train, y_train, random_state=42):
-    """Evaluate untuned models using 5-fold CV and return results and fitted models on full data."""
+    """
+    This function will evaluate the untuned regression models using a 5-fold cross-validation.
+
+    Parameters used:
+        X_train (DataFrame): Training feature matrix.
+        y_train (Series): Training target values (raw or log-transformed).
+        random_state (int): Seed for reproducibility (default is 42).
+
+    Returns:
+        results_df (DataFrame): Cross-validation metrics (mean and std of RMSE and R²) for each model.
+        fitted_models (dict): Dictionary of models trained on the full training set.
+    """
 
     kf = KFold(n_splits=5, shuffle=True, random_state=random_state)
     
@@ -57,9 +68,20 @@ def evaluate_untuned(X_train, y_train, random_state=42):
     return results_df, fitted_models
 
 
-def evaluate_tuned(X_train, y_train, is_log_target=False, random_state=42, return_params=False):
-    """Tune hyperparameters with GridSearchCV and evaluate with 5-fold CV."""
+def evaluate_tuned(X_train, y_train, random_state=42):
+    """
+    This function will hypertune our models using the best hyperparameters found 
+    using GridSearchCV. This function will also evaluate each model with a 5-fold cross-validation.
 
+    Parameters used:
+        X_train (DataFrame): Training feature matrix.
+        y_train (Series): Training target values (raw or log-transformed).
+        random_state (int): Seed for reproducibility.
+    Returns:
+        results_df (DataFrame): Cross-validation metrics (mean and std of RMSE and R2) for each tuned model.
+        fitted_models (dict): Dictionary of tuned models trained on the full training set.
+        tuned_params (dict, optional): Dictionary of best hyperparameters per model (only if return_params=True).
+    """
     param_grids = {
         "Decision Tree": {
             "max_depth": [3, 5, 7, 10],
@@ -138,7 +160,20 @@ def evaluate_tuned(X_train, y_train, is_log_target=False, random_state=42, retur
 
 def save_train_test_scores(models_raw, models_log, X_train, y_raw_train, X_test, y_raw_test, output_path):
     """
-    Compute and save train/test RMSE and R² scores for raw and log-transformed models.
+    This function computes and saves the train/test RMSE and R² scores for both raw 
+    and log-transformed models.
+
+    Parameters used:
+        models_raw (dict): Trained models using the raw target values.
+        models_log (dict): Trained models using log-transformed targets (predictions are back-transformed).
+        X_train (DataFrame): Training feature matrix.
+        y_raw_train (Series): Raw training target values.
+        X_test (DataFrame): Testing feature matrix.
+        y_raw_test (Series): Raw testing target values.
+        output_path (str): Path to save the evaluation results as a text file.
+
+    Returns:
+        A text file containing per-model training and testing scores for RMSE and R².
     """
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     
